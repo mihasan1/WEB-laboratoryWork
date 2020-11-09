@@ -1,88 +1,129 @@
-
 <!DOCTYPE html>
 <html>
-     <head>
 
-          <meta charset="utf-8">
-          <title>HTML калькулятор</title>
-     </head>
+<head>
+
+  <meta charset="utf-8">
+  <title>HTML калькулятор</title>
+</head>
+
 <body>
-<table style="border: 1px solid black;">
+  <table style="border: 1px solid black;">
     <td style="border: 1px solid black;">
-    <tr>
+      <tr>
         <h2>Конвертер ваги</h2>
         <p>
           <label>Уведіть вашу вагу в кг:</label>
           <input id="inputPounds" type="number" placeholder="кг" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
         </p>
         <p>Ваша вага в фунтах: <span id="outputKilograms"></span></p>
-        
+
         <script>
-            function weightConverter(valNum) {
-            document.getElementById("outputKilograms").innerHTML=valNum*2.2046;
-            }
+          function weightConverter(valNum) {
+            document.getElementById("outputKilograms").innerHTML = valNum * 2.2046;
+          }
         </script>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <form name="calc" class="wrapper">
-            <table class="main">
-                <tr class="display">
-                    <td colspan="4"><input type="text" name="input"></td>
-                 </tr>
-                 <tr class="buttons">
-                    <td><input type="button" value="1" OnClick="calc.input.value += '1'"></td>
-                    <td><input type="button" value="2" OnClick="calc.input.value += '2'"></td>
-                    <td><input type="button" value="3" OnClick="calc.input.value += '3'"></td>                             
-                    <td><input type="button" value="+" OnClick="calc.input.value += '+'"></td>
-                </tr>
-                <tr class="buttons">
-                    <td><input type="button" value="4" OnClick="calc.input.value += '4'"></td>
-                    <td><input type="button" value="5" OnClick="calc.input.value += '5'"></td>
-                    <td><input type="button" value="6" OnClick="calc.input.value += '6'"></td>
-                    <td><input type="button" value="-" OnClick="calc.input.value += '-'"></td>
-                </tr>
-                <tr class="buttons">
-                    <td><input type="button" value="7" OnClick="calc.input.value += '7'"></td>
-                    <td><input type="button" value="8" OnClick="calc.input.value += '8'"></td>
-                    <td><input type="button" value="9" OnClick="calc.input.value += '9'"></td>
-                    <td><input type="button" value="x" OnClick="calc.input.value += '*'"></td>
-                </tr>
-                <tr class="buttons">
-                    <td><input type="reset" value="c" OnClick="calc.input.value = ''"></td>
-                    <td><input type="button" value="0" OnClick="calc.input.value += '0'"></td>
-                    <td><input type="button" value="=" OnClick="calc.input.value = eval(calc.input.value)"></td>
-                    <td><input type="button" value="/" OnClick="calc.input.value += '/'"></td>
-                </tr>
-                </hr>
-            </table>
-            </form>
-    </tr>
-    <tr>
+          <table class="main">
+            <tr class="display">
+              <td colspan="4">
+                <input type="text" name="input">
+              </td>
+            </tr>
+            <tr class="buttons">
+              <td>
+                <input type="button" value="1" OnClick="calc.input.value += '1'">
+              </td>
+              <td>
+                <input type="button" value="2" OnClick="calc.input.value += '2'">
+              </td>
+              <td>
+                <input type="button" value="3" OnClick="calc.input.value += '3'">
+              </td>
+              <td>
+                <input type="button" value="+" OnClick="calc.input.value += '+'">
+              </td>
+            </tr>
+            <tr class="buttons">
+              <td>
+                <input type="button" value="4" OnClick="calc.input.value += '4'">
+              </td>
+              <td>
+                <input type="button" value="5" OnClick="calc.input.value += '5'">
+              </td>
+              <td>
+                <input type="button" value="6" OnClick="calc.input.value += '6'">
+              </td>
+              <td>
+                <input type="button" value="-" OnClick="calc.input.value += '-'">
+              </td>
+            </tr>
+            <tr class="buttons">
+              <td>
+                <input type="button" value="7" OnClick="calc.input.value += '7'">
+              </td>
+              <td>
+                <input type="button" value="8" OnClick="calc.input.value += '8'">
+              </td>
+              <td>
+                <input type="button" value="9" OnClick="calc.input.value += '9'">
+              </td>
+              <td>
+                <input type="button" value="x" OnClick="calc.input.value += '*'">
+              </td>
+            </tr>
+            <tr class="buttons">
+              <td>
+                <input type="reset" value="c" OnClick="calc.input.value = ''">
+              </td>
+              <td>
+                <input type="button" value="0" OnClick="calc.input.value += '0'">
+              </td>
+              <td>
+                <input type="button" value="=" OnClick="calc.input.value = eval(calc.input.value)">
+              </td>
+              <td>
+                <input type="button" value="/" OnClick="calc.input.value += '/'">
+              </td>
+            </tr>
+            </hr>
+          </table>
+        </form>
+      </tr>
+      <tr>
         <label for="ran">Скільки ти хочеш заробляти?</label>
-        <input oninput="out.value = (ran.value)" id="ran" type="range" min="0" max="100" value = "100" >
+        <input oninput="out.value = (ran.value)" id="ran" type="range" min="0" max="100" value="100">
         <output id="out">100</output>
-    </tr>
-    <tr>
-        <p>Зарплатний калькулятор</p> 
-        <br><label>Уведіть кількість годин:</label>
+      </tr>
+      <tr>
+        <p>Зарплатний калькулятор</p>
+        <br>
+        <label>Уведіть кількість годин:</label>
         <input id="inputHour" type="number" placeholder="год.">
-        <br><label>Уведіть ставку за годину:</label>
+        <br>
+        <label>Уведіть ставку за годину:</label>
         <input id="inputStavka" type="number" placeholder="грн.">
-        <br><label>Ставка подоходного податку:</label>
+        <br>
+        <label>Ставка подоходного податку:</label>
         <input id="inputTaxes" type="number" placeholder="%">
-        <div id = 'str'></div>
-        <input id="butt" type="button" value="Розрахувати"/><br><br>
+        <div id='str'></div>
+        <input id="butt" type="button" value="Розрахувати" />
+        <br>
+        <br>
         <script>
           butt.onclick = function() {
             var val1 = document.getElementById('inputHour').value;
             var val2 = document.getElementById('inputStavka').value;
             var val3 = document.getElementById('inputTaxes').value;
-            let val4 = val1*val2 - (val1*val2*val3);
-            document.getElementById('str').innerHTML="Ваша зарплата: " + val4;
-        };  
+            let val4 = val1 * val2 - (val1 * val2 * val3);
+            document.getElementById('str').innerHTML = "Ваша зарплата: " + val4;
+          };
         </script>
-    </tr>
-</td>
-</table>
-     </body>
+      </tr>
+    </td>
+  </table>
+</body>
+
 </html>

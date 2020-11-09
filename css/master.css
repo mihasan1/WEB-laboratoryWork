@@ -1,0 +1,35 @@
+body{
+  background-color: #333333;
+}
+
+h1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 24pt;
+  color:#cccccc;
+}
+ul {
+  font-family:  Helvetica, sans-serif;
+  font-size: 16pt;
+  padding-left: 10pt;
+  list-style-type: none;
+}
+
+li{
+  padding-left: 8pt;
+  padding-top: 5pt;
+  padding-bottom: 5pt;
+  border-style:solid;
+  border-radius: 4pt;
+  margin-bottom: 3pt;
+}
+
+a {
+  color: #cccccc !important;
+  text-decoration: none
+}
+
+li:hover{
+  background-color: #202020;
+}
+a:hover{
+}
