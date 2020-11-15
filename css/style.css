@@ -1,0 +1,69 @@
+.text1{
+    color: green;
+    text-align: center;
+}
+
+.text2{
+    color: red;
+    text-align: center;
+}
+
+#textPurp{
+    color: purple;
+}
+
+#link{
+    color:red;
+}
+
+#linkPink{
+    color: pink;
+}
+
+#listName{
+    color: green;
+}
+
+h1 + p{
+    font-size: 20px;
+}
+
+ p ~ code{
+    color: red;
+}
+
+p > code{
+    color: red;
+}
+
+table > tbody > tr > td:first-child{
+    background: tomato;
+}
+
+tr:first-child{
+    background: rosybrown;
+}
+
+
+tr:nth-child(even){
+    background: plum;
+}
+tr:nth-child(odd){
+    background: pink;
+}
+
+table > tbody > td:nth-child(1){
+    background: rgb(rgb(255, 124, 84));
+}
+table > tbody > td:nth-child(2){
+    background: rgb(rgb(255, 124, 84));
+}
+table > tbody > td:nth-child(3){
+    background: rgb(rgb(255, 124, 84));
+}
+table > tbody > td:nth-child(4){
+    background: rgb(rgb(255, 124, 84));
+}
+table > tbody > td:nth-child(5){
+    background: rgb(rgb(255, 124, 84));
+}
